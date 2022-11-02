@@ -1,8 +1,20 @@
-function PrimeNumber(num){
+function check_prime(num){
+	
+	let count = 0;
+	for(let i=1 ; i<=num ; i++){
+		if(num%i == 0){
+			count++
+		}	
+	}
+	
+	if(count == 2){
+		return true;
+	}
+	return false;
+}
+let answer = check_prime(13)
 
-  let factor=0;
-  for(let i=1;i<=num;i--){
-    if(num%i==0){
-      factor++;
-    }
-  }
+if(ans == true){
+console.log(num, "is prime");
+}else{
+console.log(num, "is not prime");	
