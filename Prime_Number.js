@@ -1,5 +1,5 @@
-function PrimeNumber(num){
-
+function check_prime(num){
+	
   let factor=0;
   for(let i=1;i<=num;i++){
     if(num%i==0){
@@ -14,4 +14,7 @@ function PrimeNumber(num){
 }
 
  let ans=PrimeNumber(8);
- console.log(ans);
+if(ans == true){
+console.log("is prime");
+}else{
+console.log("is not prime");	
